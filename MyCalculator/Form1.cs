@@ -16,5 +16,81 @@ namespace MyCalculator
         {
             InitializeComponent();
         }
+
+        private void Plus_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double firstArgument = double.Parse(FirstArgumentTextBox.Text);
+                double secondArgument = double.Parse(SecondArgumentTextBox.Text);
+                FirstArgumentTextBox.Text = "";
+                SecondArgumentTextBox.Text = "";
+
+                ResultTextBox.Text = (firstArgument + secondArgument).ToString();
+            }
+            catch
+            {
+                FirstArgumentTextBox.Text = "";
+                SecondArgumentTextBox.Text = "";
+            }
+
+        }
+
+        private void Minus_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double firstArgument = double.Parse(FirstArgumentTextBox.Text);
+                double secondArgument = double.Parse(SecondArgumentTextBox.Text);
+                FirstArgumentTextBox.Text = "";
+                SecondArgumentTextBox.Text = "";
+
+                ResultTextBox.Text = (firstArgument - secondArgument).ToString();
+            }
+            catch
+            {
+                FirstArgumentTextBox.Text = "";
+                SecondArgumentTextBox.Text = "";
+            }
+
+        }
+
+        private void Multiplication_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double firstArgument = double.Parse(FirstArgumentTextBox.Text);
+                double secondArgument = double.Parse(SecondArgumentTextBox.Text);
+                FirstArgumentTextBox.Text = "";
+                SecondArgumentTextBox.Text = "";
+
+                ResultTextBox.Text = (firstArgument * secondArgument).ToString();
+            }
+            catch
+            {
+                FirstArgumentTextBox.Text = "";
+                SecondArgumentTextBox.Text = "";
+            }
+
+        }
+
+        private void Division_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double firstArgument = double.Parse(FirstArgumentTextBox.Text);
+                double secondArgument = double.Parse(SecondArgumentTextBox.Text);
+                FirstArgumentTextBox.Text = "";
+                SecondArgumentTextBox.Text = "";
+
+                ResultTextBox.Text = (firstArgument / secondArgument).ToString();
+            }
+            catch
+            {
+                FirstArgumentTextBox.Text = "";
+                SecondArgumentTextBox.Text = "";
+            }
+
+        }
     }
 }
