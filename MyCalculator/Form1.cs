@@ -23,10 +23,8 @@ namespace MyCalculator
             {
                 double firstArgument = double.Parse(FirstArgumentTextBox.Text);
                 double secondArgument = double.Parse(SecondArgumentTextBox.Text);
-                FirstArgumentTextBox.Text = "";
-                SecondArgumentTextBox.Text = "";
-
-                ResultTextBox.Text = (firstArgument + secondArgument).ToString();
+                double result = firstArgument + secondArgument;
+                ResultTextBox.Text = result.ToString();
             }
             catch
             {
@@ -42,10 +40,8 @@ namespace MyCalculator
             {
                 double firstArgument = double.Parse(FirstArgumentTextBox.Text);
                 double secondArgument = double.Parse(SecondArgumentTextBox.Text);
-                FirstArgumentTextBox.Text = "";
-                SecondArgumentTextBox.Text = "";
-
-                ResultTextBox.Text = (firstArgument - secondArgument).ToString();
+                double result = firstArgument - secondArgument;
+                ResultTextBox.Text = result.ToString();
             }
             catch
             {
@@ -61,10 +57,9 @@ namespace MyCalculator
             {
                 double firstArgument = double.Parse(FirstArgumentTextBox.Text);
                 double secondArgument = double.Parse(SecondArgumentTextBox.Text);
-                FirstArgumentTextBox.Text = "";
-                SecondArgumentTextBox.Text = "";
 
-                ResultTextBox.Text = (firstArgument * secondArgument).ToString();
+                double result = firstArgument * secondArgument;
+                ResultTextBox.Text = result.ToString();
             }
             catch
             {
@@ -80,10 +75,9 @@ namespace MyCalculator
             {
                 double firstArgument = double.Parse(FirstArgumentTextBox.Text);
                 double secondArgument = double.Parse(SecondArgumentTextBox.Text);
-                FirstArgumentTextBox.Text = "";
-                SecondArgumentTextBox.Text = "";
 
-                ResultTextBox.Text = (firstArgument / secondArgument).ToString();
+                double result = firstArgument / secondArgument;
+                ResultTextBox.Text = result.ToString();
             }
             catch
             {
