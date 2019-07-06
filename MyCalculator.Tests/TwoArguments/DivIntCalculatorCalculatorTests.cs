@@ -6,12 +6,14 @@ namespace MyCalculator.Tests.TwoArguments
     [TestFixture]
     public class DivIntCalculatorCalculatorTests
     {
-        [Test]
-        public void CalculateTests()
+        [TestCase(1, 1, 1)]
+        [TestCase(2, 3, 0)]
+        [TestCase(21, 4, 5)]
+        public void CalculateTests(double firstValue, double secondValue, double expected)
         {
             DivIntCalculator divIntCalculator = new DivIntCalculator();
-            double result = divIntCalculator.Calculate(3, 2);
-            Assert.AreEqual(1, result);
+            double result = divIntCalculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, result);
         }
     }
 }

@@ -6,12 +6,14 @@ namespace MyCalculator.Tests.TwoArguments
     [TestFixture]
     public class  ModCalculatorTests
     {
-        [Test]
-        public void CalculateTests()
+        [TestCase(5, 2, 1)]
+        [TestCase(4, 6, 4)]
+        [TestCase(5, 2, 1)]
+        public void CalculateTests(double firstValue, double secondValue, double expected)
         {
             ModCalculator modCalculator = new ModCalculator();
-            double result = modCalculator.Calculate(2, 1);
-            Assert.AreEqual(0, result);
+            double result = modCalculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, result);
         }
     }
 }

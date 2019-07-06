@@ -7,12 +7,16 @@ namespace MyCalculator.Tests.TwoArguments
 
     public class MaxCalculatorTests
     {
-        [Test]
-        public void CalculateTests()
+        [TestCase(3, 9, 9)]
+        [TestCase(2, 4, 4)]
+        [TestCase(60, 2, 60)]
+        public void CalculateTests(double firstValue, double secondValue, double expected)
         {
             MaxCalculator maxCalculator = new MaxCalculator();
-            double result = maxCalculator.Calculate(4, 2);
-            Assert.AreEqual(4, result);
+            double result = maxCalculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, result);
         }
     }
 }
+
+

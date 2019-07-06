@@ -7,12 +7,16 @@ namespace MyCalculator.Tests.TwoArguments
 
     public class LogCalculatorTests
     {
-        [Test]
-        public void CalculateTests()
+        [TestCase(2, 1, 0)]
+        [TestCase(3, 9, 2)]
+        [TestCase(2, 4, 2)]
+        public void CalculateTests(double firstValue, double secondValue, double expected)
         {
             LogCalculator logCalculator = new LogCalculator();
-            double result = logCalculator.Calculate(2, 1);
-            Assert.AreEqual(0, result);
+            double result = logCalculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, result);
         }
     }
 }
+
+

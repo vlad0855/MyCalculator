@@ -7,12 +7,14 @@ namespace MyCalculator.Tests.TwoArguments
 
     public class MinCalculatorTests
     {
-        [Test]
-        public void CalculateTests()
+        [TestCase(3, 9, 3)]
+        [TestCase(2, 4, 2)]
+        [TestCase(60, 2, 2)]
+        public void CalculateTests(double firstValue, double secondValue, double expected)
         {
             MinCalculator minCalculator = new MinCalculator();
-            double result = minCalculator.Calculate(4, 2);
-            Assert.AreEqual(2, result);
+            double result = minCalculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, result);
         }
     }
 }
