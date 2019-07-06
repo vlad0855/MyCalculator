@@ -43,30 +43,10 @@ namespace MyCalculator
             {
                 double firstArgument = double.Parse(FirstArgumentTextBox.Text);
                 double secondArgument = double.Parse(SecondArgumentTextBox.Text);
-                double result;
-                switch (((Button)sender).Name)
-                {
-                    case "Plus":
-                        result = firstArgument + secondArgument;
-                        ResultTextBox.Text = result.ToString();
-                        break;
-                    case "Minus":
-                        result = firstArgument - secondArgument;
-                        ResultTextBox.Text = result.ToString();
-                        break;
-                    case "Multiplication":
-                        result = firstArgument * secondArgument;
-                        ResultTextBox.Text = result.ToString();
-                        break;
-                    case "Division":
-                        result = firstArgument / secondArgument;
-                        ResultTextBox.Text = result.ToString();
-                        break;
-                    default:
-                        FirstArgumentTextBox.Text = "";
-                        SecondArgumentTextBox.Text = "";
-                        break;
-                }
+                ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
+                double result = calculator.Calculate(firstArgument, secondArgument);
+                ResultTextBox.Text = result.ToString();
+
             }
             catch
             {
