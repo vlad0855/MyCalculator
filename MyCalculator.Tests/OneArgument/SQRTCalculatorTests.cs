@@ -1,4 +1,5 @@
-﻿using MyCalculator.OneArgument;
+﻿using System;
+using MyCalculator.OneArgument;
 using NUnit.Framework;
 
 namespace MyCalculator.Tests.OneArgument
@@ -12,9 +13,15 @@ namespace MyCalculator.Tests.OneArgument
         [TestCase(1, 1)]
         public void CalculateTests(double firstValue, double expected)
         {
-            SqrtCalculator sqrtCalculator = new SqrtCalculator();
+            SQRTCalculator sqrtCalculator = new SQRTCalculator();
             double result = sqrtCalculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.001);
+        }
+        [Test]
+        public void NegativeCalculateTests()
+        {
+            SQRTCalculator sqrtCalculator = new SQRTCalculator();
+            Assert.Throws<Exception>(() => sqrtCalculator.Calculate(-1));
         }
     }
 }

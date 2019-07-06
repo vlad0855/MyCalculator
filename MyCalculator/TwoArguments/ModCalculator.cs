@@ -1,7 +1,4 @@
-﻿using System;
-using MyCalculator.TwoArguments;
-
-namespace MyCalculator
+﻿namespace MyCalculator.TwoArguments
 {
     public class ModCalculator:ITwoArgumentsCalculator
     {

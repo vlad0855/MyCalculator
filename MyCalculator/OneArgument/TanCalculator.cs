@@ -1,7 +1,6 @@
-﻿using MyCalculator.OneArgument;
-using System;
+﻿using System;
 
-namespace MyCalculator
+namespace MyCalculator.OneArgument
 {
     public class TanCalculator : IOneArgumentCalculator
     {

@@ -17,14 +17,14 @@ namespace MyCalculator
             try
             {
                 double firstArgument = double.Parse(FirstArgumentTextBox.Text);
+                double result = 0;
                 IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
-                double result = calculator.Calculate(firstArgument);
+                result = calculator.Calculate(firstArgument);
                 ResultTextBox.Text = result.ToString();
             }
-            catch
+            catch (Exception exc)
             {
-                FirstArgumentTextBox.Text = "";
-                SecondArgumentTextBox.Text = "";
+                MessageBox.Show(exc.Message, "Ошибка", MessageBoxButtons.OK);
             }
         }
 
@@ -35,16 +35,20 @@ namespace MyCalculator
             {
                 double firstArgument = double.Parse(FirstArgumentTextBox.Text);
                 double secondArgument = double.Parse(SecondArgumentTextBox.Text);
+                double result = 0;
                 ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
-                double result = calculator.Calculate(firstArgument, secondArgument);
+                result = calculator.Calculate(firstArgument, secondArgument);
                 ResultTextBox.Text = result.ToString();
             }
-            catch
+            catch (Exception exc)
             {
+                MessageBox.Show(exc.Message, "Ошибка", MessageBoxButtons.OK);
                 FirstArgumentTextBox.Text = "";
                 SecondArgumentTextBox.Text = "";
+
             }
         }
+
 
         private void Button1_Click(object sender, EventArgs e)
         {

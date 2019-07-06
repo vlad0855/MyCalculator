@@ -55,6 +55,7 @@
     <Compile Include="OneArgument\CosCalculatorTests.cs" />
     <Compile Include="OneArgument\CtanCalculatorTests.cs" />
     <Compile Include="OneArgument\DivCalculatorTests.cs" />
+    <Compile Include="OneArgument\OneArgumentFactoryTestCase.cs" />
     <Compile Include="OneArgument\SQRTCalculatorTests.cs" />
     <Compile Include="OneArgument\SquaringCalculatorTests.cs" />
     <Compile Include="OneArgument\TanCalculatorTests.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="TwoArguments\DivisionCalculatorTest.cs" />
     <Compile Include="TwoArguments\MultiplyCalculatorTests.cs" />
     <Compile Include="TwoArguments\SubstractionCalculatorTests.cs" />
+    <Compile Include="TwoArguments\TwoArgumentsFactoryTestCase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyCalculator\MyCalculator.csproj">

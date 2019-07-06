@@ -11,7 +11,7 @@ namespace MyCalculator.OneArgument
                 case "Squaring":
                     return new SquaringCalculator();
                 case "SQRT":
-                    return new SqrtCalculator();
+                    return new SQRTCalculator();
                 case "Sin":
                     return new SinCalculator();
                 case "Cos":
@@ -25,7 +25,7 @@ namespace MyCalculator.OneArgument
                 case "Ctan":
                     return new CtanCalculator();
                 case "Abs":
-                    return new CtanCalculator();
+                    return new AbsCalculator();
                 case "Div":
                     return new DivCalculator();
                 case "Negative":

@@ -1,7 +1,8 @@
 ﻿using System;
-namespace MyCalculator
+
+namespace MyCalculator.OneArgument
 {
-    public class AbsCalculator
+    public class AbsCalculator: IOneArgumentCalculator
     {
         public double Calculate(double firstValue)
         {

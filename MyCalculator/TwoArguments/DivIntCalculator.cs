@@ -1,6 +1,4 @@
-﻿using MyCalculator.TwoArguments;
-
-namespace MyCalculator
+﻿namespace MyCalculator.TwoArguments
 {
     public class DivIntCalculator : ITwoArgumentsCalculator
     {

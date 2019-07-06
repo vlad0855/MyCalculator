@@ -1,6 +1,4 @@
-﻿using MyCalculator.OneArgument;
-
-namespace MyCalculator
+﻿namespace MyCalculator.OneArgument
 {
     public class DivCalculator : IOneArgumentCalculator
     {

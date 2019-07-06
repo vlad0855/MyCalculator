@@ -1,5 +1,6 @@
 ﻿using MyCalculator.OneArgument;
 using NUnit.Framework;
+using System;
 
 namespace MyCalculator.Tests.OneArgument
 {
@@ -15,6 +16,13 @@ namespace MyCalculator.Tests.OneArgument
             ArccosCalculator arccosCalculator = new ArccosCalculator();
             double result = arccosCalculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.001);
+        }
+
+        [Test]
+        public void NegativeCalculateTests()
+        {
+            ArccosCalculator arccosCalculator = new ArccosCalculator();
+            Assert.Throws<Exception>(() => arccosCalculator.Calculate(2));
         }
     }
 }

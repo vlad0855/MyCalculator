@@ -1,7 +1,6 @@
 ﻿using System;
-using MyCalculator.OneArgument;
 
-namespace MyCalculator
+namespace MyCalculator.OneArgument
 {
     public class PowTwoCalculator:IOneArgumentCalculator
     {

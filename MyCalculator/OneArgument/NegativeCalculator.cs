@@ -1,7 +1,4 @@
-﻿using MyCalculator.OneArgument;
-using MyCalculator.TwoArguments;
-
-namespace MyCalculator
+﻿namespace MyCalculator.OneArgument
 {
     public class NegativeCalculator:IOneArgumentCalculator
     {
