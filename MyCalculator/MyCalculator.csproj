@@ -46,8 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbsCalculator.cs" />
-    <Compile Include="DivCalculator.cs" />
+    <Compile Include="MaxCalculator.cs" />
+    <Compile Include="TwoArguments\MinCalculator.cs" />
+    <Compile Include="OneArgument\AbsCalculator.cs" />
+    <Compile Include="TwoArguments\PowCalculator.cs" />
+    <Compile Include="TwoArguments\PowFloatCalculator.cs" />
+    <Compile Include="TwoArguments\LogCalculator.cs" />
+    <Compile Include="OneArgument\DivCalculator.cs" />
     <Compile Include="OneArgument\CtanCalculator.cs" />
     <Compile Include="OneArgument\ArccosCalculator.cs" />
     <Compile Include="OneArgument\ArcsinCalculator.cs" />

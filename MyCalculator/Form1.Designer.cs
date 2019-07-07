@@ -49,6 +49,11 @@
             this.Abs = new System.Windows.Forms.Button();
             this.Div = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.Log = new System.Windows.Forms.Button();
+            this.Pow = new System.Windows.Forms.Button();
+            this.PowFloat = new System.Windows.Forms.Button();
+            this.Min = new System.Windows.Forms.Button();
+            this.Max = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgumentTextBox
@@ -248,6 +253,56 @@
             this.button1.Text = "1/x";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // Log
+            // 
+            this.Log.Location = new System.Drawing.Point(428, 112);
+            this.Log.Name = "Log";
+            this.Log.Size = new System.Drawing.Size(69, 23);
+            this.Log.TabIndex = 21;
+            this.Log.Text = "logx(y)";
+            this.Log.UseVisualStyleBackColor = true;
+            this.Log.Click += new System.EventHandler(this.CalculateTwoArguments);
+            // 
+            // Pow
+            // 
+            this.Pow.Location = new System.Drawing.Point(503, 112);
+            this.Pow.Name = "Pow";
+            this.Pow.Size = new System.Drawing.Size(69, 23);
+            this.Pow.TabIndex = 22;
+            this.Pow.Text = "x^y";
+            this.Pow.UseVisualStyleBackColor = true;
+            this.Pow.Click += new System.EventHandler(this.CalculateTwoArguments);
+            // 
+            // PowFloat
+            // 
+            this.PowFloat.Location = new System.Drawing.Point(353, 141);
+            this.PowFloat.Name = "PowFloat";
+            this.PowFloat.Size = new System.Drawing.Size(69, 23);
+            this.PowFloat.TabIndex = 23;
+            this.PowFloat.Text = "x^(1/y)";
+            this.PowFloat.UseVisualStyleBackColor = true;
+            this.PowFloat.Click += new System.EventHandler(this.CalculateTwoArguments);
+            // 
+            // Min
+            // 
+            this.Min.Location = new System.Drawing.Point(428, 141);
+            this.Min.Name = "Min";
+            this.Min.Size = new System.Drawing.Size(69, 23);
+            this.Min.TabIndex = 24;
+            this.Min.Text = "Min";
+            this.Min.UseVisualStyleBackColor = true;
+            this.Min.Click += new System.EventHandler(this.CalculateTwoArguments);
+            // 
+            // Max
+            // 
+            this.Max.Location = new System.Drawing.Point(503, 141);
+            this.Max.Name = "Max";
+            this.Max.Size = new System.Drawing.Size(69, 23);
+            this.Max.TabIndex = 25;
+            this.Max.Text = "Max";
+            this.Max.UseVisualStyleBackColor = true;
+            this.Max.Click += new System.EventHandler(this.CalculateTwoArguments);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,6 +310,11 @@
             this.BackgroundImage = global::MyCalculator.Properties.Resources.Безымянный;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(594, 296);
+            this.Controls.Add(this.Max);
+            this.Controls.Add(this.Min);
+            this.Controls.Add(this.PowFloat);
+            this.Controls.Add(this.Pow);
+            this.Controls.Add(this.Log);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Div);
             this.Controls.Add(this.Abs);
@@ -307,6 +367,11 @@
         private System.Windows.Forms.Button Abs;
         private System.Windows.Forms.Button Div;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Log;
+        private System.Windows.Forms.Button Pow;
+        private System.Windows.Forms.Button PowFloat;
+        private System.Windows.Forms.Button Min;
+        private System.Windows.Forms.Button Max;
     }
 }
 

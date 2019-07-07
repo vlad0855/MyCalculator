@@ -16,6 +16,16 @@ namespace MyCalculator.TwoArguments
                     return new MultiplyCalculator();
                 case "Division":
                     return new DivisionCalculator();
+                case "Log":
+                    return new LogCalculator();
+                case "Pow":
+                    return new PowCalculator();
+                case "PowFloat":
+                    return new PowFloatCalculator();
+                case "Min":
+                    return new MinCalculator();
+                case "Max":
+                    return new MaxCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
 
