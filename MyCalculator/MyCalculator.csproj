@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MaxCalculator.cs" />
+    <Compile Include="ModCalculator.cs" />
+    <Compile Include="NegativeCalculator.cs" />
+    <Compile Include="TwoArguments\MaxCalculator.cs" />
     <Compile Include="TwoArguments\MinCalculator.cs" />
     <Compile Include="OneArgument\AbsCalculator.cs" />
     <Compile Include="TwoArguments\PowCalculator.cs" />

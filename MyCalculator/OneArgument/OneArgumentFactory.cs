@@ -28,6 +28,8 @@ namespace MyCalculator.OneArgument
                     return new CtanCalculator();
                 case "Div":
                     return new DivCalculator();
+                case "Negative":
+                    return  new  NegativeCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
 

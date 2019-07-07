@@ -26,6 +26,8 @@ namespace MyCalculator.TwoArguments
                     return new MinCalculator();
                 case "Max":
                     return new MaxCalculator();
+                case "Mod":
+                    return  new ModCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
 
