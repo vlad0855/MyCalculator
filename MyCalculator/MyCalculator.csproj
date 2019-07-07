@@ -46,8 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModCalculator.cs" />
-    <Compile Include="NegativeCalculator.cs" />
+    <Compile Include="ExponentialPowCalculator.cs" />
+    <Compile Include="OneArgument\PowTenCalculator.cs" />
+    <Compile Include="OneArgument\PowTwoCalculator.cs" />
+    <Compile Include="TwoArguments\DivIntCalculator.cs" />
+    <Compile Include="TwoArguments\ModCalculator.cs" />
+    <Compile Include="OneArgument\NegativeCalculator.cs" />
     <Compile Include="TwoArguments\MaxCalculator.cs" />
     <Compile Include="TwoArguments\MinCalculator.cs" />
     <Compile Include="OneArgument\AbsCalculator.cs" />

@@ -30,6 +30,12 @@ namespace MyCalculator.OneArgument
                     return new DivCalculator();
                 case "Negative":
                     return  new  NegativeCalculator();
+                case "PowTwo":
+                    return  new  PowTwoCalculator();
+                case "PowTen":
+                    return  new PowTenCalculator();
+                case "ExpPow":
+                    return  new ExponentialPowCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
 

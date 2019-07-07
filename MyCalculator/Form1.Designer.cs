@@ -56,6 +56,10 @@
             this.Max = new System.Windows.Forms.Button();
             this.Mod = new System.Windows.Forms.Button();
             this.Negative = new System.Windows.Forms.Button();
+            this.DivInt = new System.Windows.Forms.Button();
+            this.PowTwo = new System.Windows.Forms.Button();
+            this.PowTen = new System.Windows.Forms.Button();
+            this.ExpPow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgumentTextBox
@@ -148,7 +152,7 @@
             // 
             // Squaring
             // 
-            this.Squaring.Location = new System.Drawing.Point(12, 129);
+            this.Squaring.Location = new System.Drawing.Point(22, 85);
             this.Squaring.Name = "Squaring";
             this.Squaring.Size = new System.Drawing.Size(69, 22);
             this.Squaring.TabIndex = 10;
@@ -158,7 +162,7 @@
             // 
             // SQRT
             // 
-            this.SQRT.Location = new System.Drawing.Point(87, 129);
+            this.SQRT.Location = new System.Drawing.Point(97, 85);
             this.SQRT.Name = "SQRT";
             this.SQRT.Size = new System.Drawing.Size(69, 22);
             this.SQRT.TabIndex = 11;
@@ -168,7 +172,7 @@
             // 
             // Sin
             // 
-            this.Sin.Location = new System.Drawing.Point(162, 129);
+            this.Sin.Location = new System.Drawing.Point(172, 85);
             this.Sin.Name = "Sin";
             this.Sin.Size = new System.Drawing.Size(69, 22);
             this.Sin.TabIndex = 12;
@@ -178,7 +182,7 @@
             // 
             // Cos
             // 
-            this.Cos.Location = new System.Drawing.Point(12, 157);
+            this.Cos.Location = new System.Drawing.Point(22, 113);
             this.Cos.Name = "Cos";
             this.Cos.Size = new System.Drawing.Size(69, 22);
             this.Cos.TabIndex = 13;
@@ -188,7 +192,7 @@
             // 
             // Tan
             // 
-            this.Tan.Location = new System.Drawing.Point(87, 157);
+            this.Tan.Location = new System.Drawing.Point(97, 113);
             this.Tan.Name = "Tan";
             this.Tan.Size = new System.Drawing.Size(69, 22);
             this.Tan.TabIndex = 14;
@@ -198,7 +202,7 @@
             // 
             // Arcsin
             // 
-            this.Arcsin.Location = new System.Drawing.Point(162, 157);
+            this.Arcsin.Location = new System.Drawing.Point(172, 113);
             this.Arcsin.Name = "Arcsin";
             this.Arcsin.Size = new System.Drawing.Size(69, 22);
             this.Arcsin.TabIndex = 15;
@@ -208,7 +212,7 @@
             // 
             // Arccos
             // 
-            this.Arccos.Location = new System.Drawing.Point(12, 185);
+            this.Arccos.Location = new System.Drawing.Point(22, 141);
             this.Arccos.Name = "Arccos";
             this.Arccos.Size = new System.Drawing.Size(69, 22);
             this.Arccos.TabIndex = 16;
@@ -218,7 +222,7 @@
             // 
             // Ctan
             // 
-            this.Ctan.Location = new System.Drawing.Point(87, 185);
+            this.Ctan.Location = new System.Drawing.Point(97, 141);
             this.Ctan.Name = "Ctan";
             this.Ctan.Size = new System.Drawing.Size(69, 22);
             this.Ctan.TabIndex = 17;
@@ -228,7 +232,7 @@
             // 
             // Abs
             // 
-            this.Abs.Location = new System.Drawing.Point(162, 185);
+            this.Abs.Location = new System.Drawing.Point(172, 141);
             this.Abs.Name = "Abs";
             this.Abs.Size = new System.Drawing.Size(69, 22);
             this.Abs.TabIndex = 18;
@@ -238,7 +242,7 @@
             // 
             // Div
             // 
-            this.Div.Location = new System.Drawing.Point(12, 213);
+            this.Div.Location = new System.Drawing.Point(22, 169);
             this.Div.Name = "Div";
             this.Div.Size = new System.Drawing.Size(69, 22);
             this.Div.TabIndex = 19;
@@ -248,7 +252,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(87, 213);
+            this.button1.Location = new System.Drawing.Point(97, 169);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(69, 22);
             this.button1.TabIndex = 20;
@@ -257,7 +261,7 @@
             // 
             // Log
             // 
-            this.Log.Location = new System.Drawing.Point(428, 128);
+            this.Log.Location = new System.Drawing.Point(438, 84);
             this.Log.Name = "Log";
             this.Log.Size = new System.Drawing.Size(69, 23);
             this.Log.TabIndex = 21;
@@ -267,7 +271,7 @@
             // 
             // Pow
             // 
-            this.Pow.Location = new System.Drawing.Point(503, 128);
+            this.Pow.Location = new System.Drawing.Point(513, 84);
             this.Pow.Name = "Pow";
             this.Pow.Size = new System.Drawing.Size(69, 23);
             this.Pow.TabIndex = 22;
@@ -277,7 +281,7 @@
             // 
             // PowFloat
             // 
-            this.PowFloat.Location = new System.Drawing.Point(353, 128);
+            this.PowFloat.Location = new System.Drawing.Point(363, 84);
             this.PowFloat.Name = "PowFloat";
             this.PowFloat.Size = new System.Drawing.Size(69, 23);
             this.PowFloat.TabIndex = 23;
@@ -287,7 +291,7 @@
             // 
             // Min
             // 
-            this.Min.Location = new System.Drawing.Point(428, 157);
+            this.Min.Location = new System.Drawing.Point(438, 113);
             this.Min.Name = "Min";
             this.Min.Size = new System.Drawing.Size(69, 23);
             this.Min.TabIndex = 24;
@@ -297,7 +301,7 @@
             // 
             // Max
             // 
-            this.Max.Location = new System.Drawing.Point(503, 157);
+            this.Max.Location = new System.Drawing.Point(513, 113);
             this.Max.Name = "Max";
             this.Max.Size = new System.Drawing.Size(69, 23);
             this.Max.TabIndex = 25;
@@ -307,7 +311,7 @@
             // 
             // Mod
             // 
-            this.Mod.Location = new System.Drawing.Point(353, 157);
+            this.Mod.Location = new System.Drawing.Point(363, 113);
             this.Mod.Name = "Mod";
             this.Mod.Size = new System.Drawing.Size(69, 23);
             this.Mod.TabIndex = 26;
@@ -317,13 +321,53 @@
             // 
             // Negative
             // 
-            this.Negative.Location = new System.Drawing.Point(353, 184);
+            this.Negative.Location = new System.Drawing.Point(363, 140);
             this.Negative.Name = "Negative";
             this.Negative.Size = new System.Drawing.Size(69, 23);
             this.Negative.TabIndex = 27;
             this.Negative.Text = "-x";
             this.Negative.UseVisualStyleBackColor = true;
             this.Negative.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // DivInt
+            // 
+            this.DivInt.Location = new System.Drawing.Point(438, 140);
+            this.DivInt.Name = "DivInt";
+            this.DivInt.Size = new System.Drawing.Size(69, 23);
+            this.DivInt.TabIndex = 28;
+            this.DivInt.Text = "DivInt";
+            this.DivInt.UseVisualStyleBackColor = true;
+            this.DivInt.Click += new System.EventHandler(this.CalculateTwoArguments);
+            // 
+            // PowTwo
+            // 
+            this.PowTwo.Location = new System.Drawing.Point(513, 141);
+            this.PowTwo.Name = "PowTwo";
+            this.PowTwo.Size = new System.Drawing.Size(69, 23);
+            this.PowTwo.TabIndex = 29;
+            this.PowTwo.Text = "2^x";
+            this.PowTwo.UseVisualStyleBackColor = true;
+            this.PowTwo.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // PowTen
+            // 
+            this.PowTen.Location = new System.Drawing.Point(513, 169);
+            this.PowTen.Name = "PowTen";
+            this.PowTen.Size = new System.Drawing.Size(69, 23);
+            this.PowTen.TabIndex = 30;
+            this.PowTen.Text = "10^x";
+            this.PowTen.UseVisualStyleBackColor = true;
+            this.PowTen.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // ExpPow
+            // 
+            this.ExpPow.Location = new System.Drawing.Point(438, 169);
+            this.ExpPow.Name = "ExpPow";
+            this.ExpPow.Size = new System.Drawing.Size(69, 23);
+            this.ExpPow.TabIndex = 31;
+            this.ExpPow.Text = "e^x";
+            this.ExpPow.UseVisualStyleBackColor = true;
+            this.ExpPow.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
             // Form1
             // 
@@ -332,6 +376,10 @@
             this.BackgroundImage = global::MyCalculator.Properties.Resources.Безымянный;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(594, 296);
+            this.Controls.Add(this.ExpPow);
+            this.Controls.Add(this.PowTen);
+            this.Controls.Add(this.PowTwo);
+            this.Controls.Add(this.DivInt);
             this.Controls.Add(this.Negative);
             this.Controls.Add(this.Mod);
             this.Controls.Add(this.Max);
@@ -398,6 +446,10 @@
         private System.Windows.Forms.Button Max;
         private System.Windows.Forms.Button Mod;
         private System.Windows.Forms.Button Negative;
+        private System.Windows.Forms.Button DivInt;
+        private System.Windows.Forms.Button PowTwo;
+        private System.Windows.Forms.Button PowTen;
+        private System.Windows.Forms.Button ExpPow;
     }
 }
 

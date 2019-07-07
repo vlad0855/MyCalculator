@@ -2,7 +2,7 @@
 
 namespace MyCalculator
 {
-    public class DivCalculator:IOneArgumentCalculator
+    public class DivCalculator : IOneArgumentCalculator
     {
         public double Calculate(double firstValue)
         {

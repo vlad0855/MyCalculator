@@ -28,6 +28,8 @@ namespace MyCalculator.TwoArguments
                     return new MaxCalculator();
                 case "Mod":
                     return  new ModCalculator();
+                case "DivInt":
+                    return  new  DivIntCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
 
