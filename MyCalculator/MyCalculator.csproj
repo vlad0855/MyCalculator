@@ -46,11 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArcsinCalculator.cs" />
+    <Compile Include="CosCalclator.cs" />
     <Compile Include="OneArgument\OneArgumentFactory.cs" />
     <Compile Include="OneArgument\SQRTCalculator.cs" />
     <Compile Include="OneArgument\SquaringCalculator.cs" />
     <Compile Include="OneArgument\IOneArgumentCalculator.cs" />
-    <Compile Include="SinCalculator.cs" />
+    <Compile Include="OneArgument\SinCalculator.cs" />
+    <Compile Include="Tan.cs" />
     <Compile Include="TwoArguments\AdditionCalculator.cs" />
     <Compile Include="TwoArguments\DivisionCalculator.cs" />
     <Compile Include="Form1.cs">

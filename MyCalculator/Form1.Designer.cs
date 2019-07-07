@@ -41,6 +41,9 @@
             this.Squaring = new System.Windows.Forms.Button();
             this.SQRT = new System.Windows.Forms.Button();
             this.Sin = new System.Windows.Forms.Button();
+            this.Cos = new System.Windows.Forms.Button();
+            this.Tan = new System.Windows.Forms.Button();
+            this.Arcsin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgumentTextBox
@@ -161,13 +164,46 @@
             this.Sin.UseVisualStyleBackColor = true;
             this.Sin.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
+            // Cos
+            // 
+            this.Cos.Location = new System.Drawing.Point(386, 104);
+            this.Cos.Name = "Cos";
+            this.Cos.Size = new System.Drawing.Size(69, 22);
+            this.Cos.TabIndex = 13;
+            this.Cos.Text = "Cos";
+            this.Cos.UseVisualStyleBackColor = true;
+            this.Cos.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // Tan
+            // 
+            this.Tan.Location = new System.Drawing.Point(143, 132);
+            this.Tan.Name = "Tan";
+            this.Tan.Size = new System.Drawing.Size(69, 22);
+            this.Tan.TabIndex = 14;
+            this.Tan.Text = "Tan";
+            this.Tan.UseVisualStyleBackColor = true;
+            this.Tan.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // Arcsin
+            // 
+            this.Arcsin.Location = new System.Drawing.Point(224, 132);
+            this.Arcsin.Name = "Arcsin";
+            this.Arcsin.Size = new System.Drawing.Size(69, 22);
+            this.Arcsin.TabIndex = 15;
+            this.Arcsin.Text = "Arcsin";
+            this.Arcsin.UseVisualStyleBackColor = true;
+            this.Arcsin.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MyCalculator.Properties.Resources.Безымянный;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(586, 296);
+            this.ClientSize = new System.Drawing.Size(594, 296);
+            this.Controls.Add(this.Arcsin);
+            this.Controls.Add(this.Tan);
+            this.Controls.Add(this.Cos);
             this.Controls.Add(this.Sin);
             this.Controls.Add(this.SQRT);
             this.Controls.Add(this.Squaring);
@@ -183,6 +219,7 @@
             this.Controls.Add(this.FirstArgumentTextBox);
             this.Name = "Form1";
             this.Text = "KAVO";
+            this.Click += new System.EventHandler(this.CalculateOneArgument);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,6 +240,9 @@
         private System.Windows.Forms.Button Squaring;
         private System.Windows.Forms.Button SQRT;
         private System.Windows.Forms.Button Sin;
+        private System.Windows.Forms.Button Cos;
+        private System.Windows.Forms.Button Tan;
+        private System.Windows.Forms.Button Arcsin;
     }
 }
 
