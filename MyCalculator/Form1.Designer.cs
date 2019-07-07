@@ -48,7 +48,6 @@
             this.Ctan = new System.Windows.Forms.Button();
             this.Abs = new System.Windows.Forms.Button();
             this.Div = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.Log = new System.Windows.Forms.Button();
             this.Pow = new System.Windows.Forms.Button();
             this.PowFloat = new System.Windows.Forms.Button();
@@ -250,15 +249,6 @@
             this.Div.UseVisualStyleBackColor = true;
             this.Div.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(97, 169);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 22);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "1/x";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Log
             // 
             this.Log.Location = new System.Drawing.Point(438, 84);
@@ -387,7 +377,6 @@
             this.Controls.Add(this.PowFloat);
             this.Controls.Add(this.Pow);
             this.Controls.Add(this.Log);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.Div);
             this.Controls.Add(this.Abs);
             this.Controls.Add(this.Ctan);
@@ -409,7 +398,7 @@
             this.Controls.Add(this.ResultTextBox);
             this.Controls.Add(this.FirstArgumentTextBox);
             this.Name = "Form1";
-            this.Text = "KAVO";
+            this.Text = "KAVOlator";
             this.Click += new System.EventHandler(this.CalculateOneArgument);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -438,7 +427,6 @@
         private System.Windows.Forms.Button Ctan;
         private System.Windows.Forms.Button Abs;
         private System.Windows.Forms.Button Div;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Log;
         private System.Windows.Forms.Button Pow;
         private System.Windows.Forms.Button PowFloat;
