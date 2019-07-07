@@ -44,6 +44,7 @@
             this.Cos = new System.Windows.Forms.Button();
             this.Tan = new System.Windows.Forms.Button();
             this.Arcsin = new System.Windows.Forms.Button();
+            this.Arccos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgumentTextBox
@@ -194,6 +195,16 @@
             this.Arcsin.UseVisualStyleBackColor = true;
             this.Arcsin.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
+            // Arccos
+            // 
+            this.Arccos.Location = new System.Drawing.Point(305, 132);
+            this.Arccos.Name = "Arccos";
+            this.Arccos.Size = new System.Drawing.Size(69, 22);
+            this.Arccos.TabIndex = 16;
+            this.Arccos.Text = "Acos";
+            this.Arccos.UseVisualStyleBackColor = true;
+            this.Arccos.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,6 +212,7 @@
             this.BackgroundImage = global::MyCalculator.Properties.Resources.Безымянный;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(594, 296);
+            this.Controls.Add(this.Arccos);
             this.Controls.Add(this.Arcsin);
             this.Controls.Add(this.Tan);
             this.Controls.Add(this.Cos);
@@ -243,6 +255,7 @@
         private System.Windows.Forms.Button Cos;
         private System.Windows.Forms.Button Tan;
         private System.Windows.Forms.Button Arcsin;
+        private System.Windows.Forms.Button Arccos;
     }
 }
 

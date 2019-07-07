@@ -20,6 +20,8 @@ namespace MyCalculator.OneArgument
                     return new TanCalculator();
                 case "Arcsin":
                     return new ArcsinCalculator();
+                case "Arccos":
+                    return new ArccosCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
 
