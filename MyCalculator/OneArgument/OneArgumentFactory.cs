@@ -22,6 +22,12 @@ namespace MyCalculator.OneArgument
                     return new ArcsinCalculator();
                 case "Arccos":
                     return new ArccosCalculator();
+                case "Ctan":
+                    return new CtanCalculator();
+                case "Abs":
+                    return new CtanCalculator();
+                case "Div":
+                    return new DivCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
 

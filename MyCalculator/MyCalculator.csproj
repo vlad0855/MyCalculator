@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbsCalculator.cs" />
+    <Compile Include="DivCalculator.cs" />
+    <Compile Include="OneArgument\CtanCalculator.cs" />
     <Compile Include="OneArgument\ArccosCalculator.cs" />
     <Compile Include="OneArgument\ArcsinCalculator.cs" />
     <Compile Include="OneArgument\CosCalclator.cs" />

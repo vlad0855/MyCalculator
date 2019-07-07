@@ -45,32 +45,36 @@
             this.Tan = new System.Windows.Forms.Button();
             this.Arcsin = new System.Windows.Forms.Button();
             this.Arccos = new System.Windows.Forms.Button();
+            this.Ctan = new System.Windows.Forms.Button();
+            this.Abs = new System.Windows.Forms.Button();
+            this.Div = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgumentTextBox
             // 
-            this.FirstArgumentTextBox.Location = new System.Drawing.Point(143, 49);
+            this.FirstArgumentTextBox.Location = new System.Drawing.Point(141, 28);
             this.FirstArgumentTextBox.Name = "FirstArgumentTextBox";
             this.FirstArgumentTextBox.Size = new System.Drawing.Size(100, 20);
             this.FirstArgumentTextBox.TabIndex = 0;
             // 
             // ResultTextBox
             // 
-            this.ResultTextBox.Location = new System.Drawing.Point(355, 49);
+            this.ResultTextBox.Location = new System.Drawing.Point(353, 28);
             this.ResultTextBox.Name = "ResultTextBox";
             this.ResultTextBox.Size = new System.Drawing.Size(100, 20);
             this.ResultTextBox.TabIndex = 1;
             // 
             // SecondArgumentTextBox
             // 
-            this.SecondArgumentTextBox.Location = new System.Drawing.Point(249, 49);
+            this.SecondArgumentTextBox.Location = new System.Drawing.Point(247, 28);
             this.SecondArgumentTextBox.Name = "SecondArgumentTextBox";
             this.SecondArgumentTextBox.Size = new System.Drawing.Size(100, 20);
             this.SecondArgumentTextBox.TabIndex = 2;
             // 
             // Plus
             // 
-            this.Plus.Location = new System.Drawing.Point(143, 75);
+            this.Plus.Location = new System.Drawing.Point(353, 83);
             this.Plus.Name = "Plus";
             this.Plus.Size = new System.Drawing.Size(69, 23);
             this.Plus.TabIndex = 3;
@@ -80,7 +84,7 @@
             // 
             // Minus
             // 
-            this.Minus.Location = new System.Drawing.Point(224, 75);
+            this.Minus.Location = new System.Drawing.Point(428, 82);
             this.Minus.Name = "Minus";
             this.Minus.Size = new System.Drawing.Size(69, 23);
             this.Minus.TabIndex = 4;
@@ -90,7 +94,7 @@
             // 
             // Multiplication
             // 
-            this.Multiplication.Location = new System.Drawing.Point(305, 75);
+            this.Multiplication.Location = new System.Drawing.Point(503, 82);
             this.Multiplication.Name = "Multiplication";
             this.Multiplication.Size = new System.Drawing.Size(69, 23);
             this.Multiplication.TabIndex = 5;
@@ -100,7 +104,7 @@
             // 
             // Division
             // 
-            this.Division.Location = new System.Drawing.Point(386, 75);
+            this.Division.Location = new System.Drawing.Point(353, 112);
             this.Division.Name = "Division";
             this.Division.Size = new System.Drawing.Size(69, 23);
             this.Division.TabIndex = 6;
@@ -111,7 +115,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(143, 29);
+            this.label1.Location = new System.Drawing.Point(141, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 7;
@@ -120,7 +124,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(249, 29);
+            this.label2.Location = new System.Drawing.Point(247, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 13);
             this.label2.TabIndex = 8;
@@ -129,7 +133,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(374, 30);
+            this.label3.Location = new System.Drawing.Point(372, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 9;
@@ -137,7 +141,7 @@
             // 
             // Squaring
             // 
-            this.Squaring.Location = new System.Drawing.Point(143, 104);
+            this.Squaring.Location = new System.Drawing.Point(12, 83);
             this.Squaring.Name = "Squaring";
             this.Squaring.Size = new System.Drawing.Size(69, 22);
             this.Squaring.TabIndex = 10;
@@ -147,7 +151,7 @@
             // 
             // SQRT
             // 
-            this.SQRT.Location = new System.Drawing.Point(224, 104);
+            this.SQRT.Location = new System.Drawing.Point(87, 83);
             this.SQRT.Name = "SQRT";
             this.SQRT.Size = new System.Drawing.Size(69, 22);
             this.SQRT.TabIndex = 11;
@@ -157,7 +161,7 @@
             // 
             // Sin
             // 
-            this.Sin.Location = new System.Drawing.Point(305, 104);
+            this.Sin.Location = new System.Drawing.Point(162, 83);
             this.Sin.Name = "Sin";
             this.Sin.Size = new System.Drawing.Size(69, 22);
             this.Sin.TabIndex = 12;
@@ -167,7 +171,7 @@
             // 
             // Cos
             // 
-            this.Cos.Location = new System.Drawing.Point(386, 104);
+            this.Cos.Location = new System.Drawing.Point(12, 111);
             this.Cos.Name = "Cos";
             this.Cos.Size = new System.Drawing.Size(69, 22);
             this.Cos.TabIndex = 13;
@@ -177,7 +181,7 @@
             // 
             // Tan
             // 
-            this.Tan.Location = new System.Drawing.Point(143, 132);
+            this.Tan.Location = new System.Drawing.Point(87, 111);
             this.Tan.Name = "Tan";
             this.Tan.Size = new System.Drawing.Size(69, 22);
             this.Tan.TabIndex = 14;
@@ -187,7 +191,7 @@
             // 
             // Arcsin
             // 
-            this.Arcsin.Location = new System.Drawing.Point(224, 132);
+            this.Arcsin.Location = new System.Drawing.Point(162, 111);
             this.Arcsin.Name = "Arcsin";
             this.Arcsin.Size = new System.Drawing.Size(69, 22);
             this.Arcsin.TabIndex = 15;
@@ -197,13 +201,52 @@
             // 
             // Arccos
             // 
-            this.Arccos.Location = new System.Drawing.Point(305, 132);
+            this.Arccos.Location = new System.Drawing.Point(12, 139);
             this.Arccos.Name = "Arccos";
             this.Arccos.Size = new System.Drawing.Size(69, 22);
             this.Arccos.TabIndex = 16;
-            this.Arccos.Text = "Acos";
+            this.Arccos.Text = "Arccos";
             this.Arccos.UseVisualStyleBackColor = true;
             this.Arccos.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // Ctan
+            // 
+            this.Ctan.Location = new System.Drawing.Point(87, 139);
+            this.Ctan.Name = "Ctan";
+            this.Ctan.Size = new System.Drawing.Size(69, 22);
+            this.Ctan.TabIndex = 17;
+            this.Ctan.Text = "Ctan";
+            this.Ctan.UseVisualStyleBackColor = true;
+            this.Ctan.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // Abs
+            // 
+            this.Abs.Location = new System.Drawing.Point(162, 139);
+            this.Abs.Name = "Abs";
+            this.Abs.Size = new System.Drawing.Size(69, 22);
+            this.Abs.TabIndex = 18;
+            this.Abs.Text = "Abs";
+            this.Abs.UseVisualStyleBackColor = true;
+            this.Abs.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // Div
+            // 
+            this.Div.Location = new System.Drawing.Point(12, 167);
+            this.Div.Name = "Div";
+            this.Div.Size = new System.Drawing.Size(69, 22);
+            this.Div.TabIndex = 19;
+            this.Div.Text = "1/x";
+            this.Div.UseVisualStyleBackColor = true;
+            this.Div.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(87, 167);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 22);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "1/x";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -212,6 +255,10 @@
             this.BackgroundImage = global::MyCalculator.Properties.Resources.Безымянный;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(594, 296);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Div);
+            this.Controls.Add(this.Abs);
+            this.Controls.Add(this.Ctan);
             this.Controls.Add(this.Arccos);
             this.Controls.Add(this.Arcsin);
             this.Controls.Add(this.Tan);
@@ -256,6 +303,10 @@
         private System.Windows.Forms.Button Tan;
         private System.Windows.Forms.Button Arcsin;
         private System.Windows.Forms.Button Arccos;
+        private System.Windows.Forms.Button Ctan;
+        private System.Windows.Forms.Button Abs;
+        private System.Windows.Forms.Button Div;
+        private System.Windows.Forms.Button button1;
     }
 }
 
