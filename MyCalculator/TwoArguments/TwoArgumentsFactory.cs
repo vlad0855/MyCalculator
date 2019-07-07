@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MyCalculator
+namespace MyCalculator.TwoArguments
 {
-    public  class TwoArgumentsFactory
+    public static class TwoArgumentsFactory
     {
         public static ITwoArgumentsCalculator CreateCalculator(string sender)
         {

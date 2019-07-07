@@ -38,32 +38,34 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.Squaring = new System.Windows.Forms.Button();
+            this.SQRT = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgumentTextBox
             // 
-            this.FirstArgumentTextBox.Location = new System.Drawing.Point(17, 34);
+            this.FirstArgumentTextBox.Location = new System.Drawing.Point(143, 49);
             this.FirstArgumentTextBox.Name = "FirstArgumentTextBox";
             this.FirstArgumentTextBox.Size = new System.Drawing.Size(100, 20);
             this.FirstArgumentTextBox.TabIndex = 0;
             // 
             // ResultTextBox
             // 
-            this.ResultTextBox.Location = new System.Drawing.Point(229, 34);
+            this.ResultTextBox.Location = new System.Drawing.Point(355, 49);
             this.ResultTextBox.Name = "ResultTextBox";
             this.ResultTextBox.Size = new System.Drawing.Size(100, 20);
             this.ResultTextBox.TabIndex = 1;
             // 
             // SecondArgumentTextBox
             // 
-            this.SecondArgumentTextBox.Location = new System.Drawing.Point(123, 34);
+            this.SecondArgumentTextBox.Location = new System.Drawing.Point(249, 49);
             this.SecondArgumentTextBox.Name = "SecondArgumentTextBox";
             this.SecondArgumentTextBox.Size = new System.Drawing.Size(100, 20);
             this.SecondArgumentTextBox.TabIndex = 2;
             // 
             // Plus
             // 
-            this.Plus.Location = new System.Drawing.Point(17, 60);
+            this.Plus.Location = new System.Drawing.Point(143, 75);
             this.Plus.Name = "Plus";
             this.Plus.Size = new System.Drawing.Size(69, 23);
             this.Plus.TabIndex = 3;
@@ -73,7 +75,7 @@
             // 
             // Minus
             // 
-            this.Minus.Location = new System.Drawing.Point(98, 60);
+            this.Minus.Location = new System.Drawing.Point(224, 75);
             this.Minus.Name = "Minus";
             this.Minus.Size = new System.Drawing.Size(69, 23);
             this.Minus.TabIndex = 4;
@@ -83,7 +85,7 @@
             // 
             // Multiplication
             // 
-            this.Multiplication.Location = new System.Drawing.Point(179, 60);
+            this.Multiplication.Location = new System.Drawing.Point(305, 75);
             this.Multiplication.Name = "Multiplication";
             this.Multiplication.Size = new System.Drawing.Size(69, 23);
             this.Multiplication.TabIndex = 5;
@@ -93,7 +95,7 @@
             // 
             // Division
             // 
-            this.Division.Location = new System.Drawing.Point(260, 60);
+            this.Division.Location = new System.Drawing.Point(386, 75);
             this.Division.Name = "Division";
             this.Division.Size = new System.Drawing.Size(69, 23);
             this.Division.TabIndex = 6;
@@ -104,7 +106,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 14);
+            this.label1.Location = new System.Drawing.Point(143, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 7;
@@ -113,7 +115,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(123, 14);
+            this.label2.Location = new System.Drawing.Point(249, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 13);
             this.label2.TabIndex = 8;
@@ -122,17 +124,41 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(248, 15);
+            this.label3.Location = new System.Drawing.Point(374, 30);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Результат";
             // 
+            // Squaring
+            // 
+            this.Squaring.Location = new System.Drawing.Point(143, 104);
+            this.Squaring.Name = "Squaring";
+            this.Squaring.Size = new System.Drawing.Size(150, 41);
+            this.Squaring.TabIndex = 10;
+            this.Squaring.Text = "x^2";
+            this.Squaring.UseVisualStyleBackColor = true;
+            this.Squaring.Click += new System.EventHandler(this.Squaring_Click);
+            // 
+            // SQRT
+            // 
+            this.SQRT.Location = new System.Drawing.Point(305, 104);
+            this.SQRT.Name = "SQRT";
+            this.SQRT.Size = new System.Drawing.Size(150, 41);
+            this.SQRT.TabIndex = 11;
+            this.SQRT.Text = "√ ";
+            this.SQRT.UseVisualStyleBackColor = true;
+            this.SQRT.Click += new System.EventHandler(this.SQRT_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 293);
+            this.BackgroundImage = global::MyCalculator.Properties.Resources.Безымянный;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(586, 296);
+            this.Controls.Add(this.SQRT);
+            this.Controls.Add(this.Squaring);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -144,7 +170,7 @@
             this.Controls.Add(this.ResultTextBox);
             this.Controls.Add(this.FirstArgumentTextBox);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "KAVO";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,6 +188,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Squaring;
+        private System.Windows.Forms.Button SQRT;
     }
 }
 

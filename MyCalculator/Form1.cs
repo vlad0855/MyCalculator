@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyCalculator.OneArgument;
+using MyCalculator.TwoArguments;
 
 namespace MyCalculator
 {
@@ -19,25 +14,33 @@ namespace MyCalculator
 
         private void Plus_Click(object sender, EventArgs e)
         {
-            Calculate(sender);
+            CalculateTwoArguments(sender);
         }
 
         private void Minus_Click(object sender, EventArgs e)
         {
-            Calculate(sender);
+            CalculateTwoArguments(sender);
         }
 
         private void Multiplication_Click(object sender, EventArgs e)
         {
-            Calculate(sender);
+            CalculateTwoArguments(sender);
         }
 
         private void Division_Click(object sender, EventArgs e)
         {
-            Calculate(sender);
+            CalculateTwoArguments(sender);
+        }
+        private void Squaring_Click(object sender, EventArgs e)
+        {
+            CalculateOneArgument(sender);
+        }
+        private void SQRT_Click(object sender, EventArgs e)
+        {
+            CalculateOneArgument(sender);
         }
 
-        void Calculate(object sender)
+        void CalculateTwoArguments(object sender)
         {
             try
             {
@@ -54,5 +57,21 @@ namespace MyCalculator
                 SecondArgumentTextBox.Text = "";
             }
         }
+        void CalculateOneArgument(object sender)
+        {
+            try
+            {
+                double firstArgument = double.Parse(FirstArgumentTextBox.Text);
+                IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
+                double result = calculator.Calculate(firstArgument);
+                ResultTextBox.Text = result.ToString();
+            }
+            catch
+            {
+                FirstArgumentTextBox.Text = "";
+                SecondArgumentTextBox.Text = "";
+            }
+        }
+
     }
 }
