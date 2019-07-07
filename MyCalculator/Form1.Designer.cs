@@ -40,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Squaring = new System.Windows.Forms.Button();
             this.SQRT = new System.Windows.Forms.Button();
+            this.Sin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgumentTextBox
@@ -71,7 +72,7 @@
             this.Plus.TabIndex = 3;
             this.Plus.Text = "+";
             this.Plus.UseVisualStyleBackColor = true;
-            this.Plus.Click += new System.EventHandler(this.Plus_Click);
+            this.Plus.Click += new System.EventHandler(this.CalculateTwoArguments);
             // 
             // Minus
             // 
@@ -81,7 +82,7 @@
             this.Minus.TabIndex = 4;
             this.Minus.Text = "-";
             this.Minus.UseVisualStyleBackColor = true;
-            this.Minus.Click += new System.EventHandler(this.Minus_Click);
+            this.Minus.Click += new System.EventHandler(this.CalculateTwoArguments);
             // 
             // Multiplication
             // 
@@ -91,7 +92,7 @@
             this.Multiplication.TabIndex = 5;
             this.Multiplication.Text = "*";
             this.Multiplication.UseVisualStyleBackColor = true;
-            this.Multiplication.Click += new System.EventHandler(this.Multiplication_Click);
+            this.Multiplication.Click += new System.EventHandler(this.CalculateTwoArguments);
             // 
             // Division
             // 
@@ -101,7 +102,7 @@
             this.Division.TabIndex = 6;
             this.Division.Text = "/";
             this.Division.UseVisualStyleBackColor = true;
-            this.Division.Click += new System.EventHandler(this.Division_Click);
+            this.Division.Click += new System.EventHandler(this.CalculateTwoArguments);
             // 
             // label1
             // 
@@ -134,21 +135,31 @@
             // 
             this.Squaring.Location = new System.Drawing.Point(143, 104);
             this.Squaring.Name = "Squaring";
-            this.Squaring.Size = new System.Drawing.Size(150, 41);
+            this.Squaring.Size = new System.Drawing.Size(69, 22);
             this.Squaring.TabIndex = 10;
             this.Squaring.Text = "x^2";
             this.Squaring.UseVisualStyleBackColor = true;
-            this.Squaring.Click += new System.EventHandler(this.Squaring_Click);
+            this.Squaring.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
             // SQRT
             // 
-            this.SQRT.Location = new System.Drawing.Point(305, 104);
+            this.SQRT.Location = new System.Drawing.Point(224, 104);
             this.SQRT.Name = "SQRT";
-            this.SQRT.Size = new System.Drawing.Size(150, 41);
+            this.SQRT.Size = new System.Drawing.Size(69, 22);
             this.SQRT.TabIndex = 11;
             this.SQRT.Text = "√ ";
             this.SQRT.UseVisualStyleBackColor = true;
-            this.SQRT.Click += new System.EventHandler(this.SQRT_Click);
+            this.SQRT.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // Sin
+            // 
+            this.Sin.Location = new System.Drawing.Point(305, 104);
+            this.Sin.Name = "Sin";
+            this.Sin.Size = new System.Drawing.Size(69, 22);
+            this.Sin.TabIndex = 12;
+            this.Sin.Text = "Sin";
+            this.Sin.UseVisualStyleBackColor = true;
+            this.Sin.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
             // Form1
             // 
@@ -157,6 +168,7 @@
             this.BackgroundImage = global::MyCalculator.Properties.Resources.Безымянный;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(586, 296);
+            this.Controls.Add(this.Sin);
             this.Controls.Add(this.SQRT);
             this.Controls.Add(this.Squaring);
             this.Controls.Add(this.label3);
@@ -190,6 +202,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Squaring;
         private System.Windows.Forms.Button SQRT;
+        private System.Windows.Forms.Button Sin;
     }
 }
 

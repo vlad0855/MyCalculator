@@ -12,6 +12,8 @@ namespace MyCalculator.OneArgument
                     return new SquaringCalculator();
                 case "SQRT":
                     return new SqrtCalculator();
+                case "Sin":
+                    return new SinCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
 
