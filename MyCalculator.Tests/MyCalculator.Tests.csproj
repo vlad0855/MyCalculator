@@ -49,6 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgument\AbsCalculatorTests.cs" />
+    <Compile Include="OneArgument\ArccosCalculatorTests.cs" />
+    <Compile Include="OneArgument\ArcsinCalculatorTests.cs" />
+    <Compile Include="OneArgument\CosCalculatorTests.cs" />
+    <Compile Include="OneArgument\CtanCalculatorTests.cs" />
+    <Compile Include="OneArgument\DivCalculatorTests.cs" />
+    <Compile Include="OneArgument\SQRTCalculatorTests.cs" />
+    <Compile Include="OneArgument\SquaringCalculatorTests.cs" />
+    <Compile Include="OneArgument\TanCalculatorTests.cs" />
     <Compile Include="TwoArguments\PowCalculatorTests.cs" />
     <Compile Include="TwoArguments\LogCalculatorTests.cs" />
     <Compile Include="TwoArguments\DivIntCalculatorCalculatorTests.cs" />
