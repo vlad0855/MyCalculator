@@ -10,9 +10,16 @@ namespace MyCalculatorWeb.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Operation = new SelectListItem[]
+            {
+                new SelectListItem() {Value = "multiply", Text = "multiply"},
+                new SelectListItem() {Value = "sum", Text = "sum"},
+                new SelectListItem() {Value = "minus", Text = "minus"},
+                new SelectListItem() {Value = "division", Text = "division"}
+            };
             return View();
         }
-
+        [HttpPost]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
