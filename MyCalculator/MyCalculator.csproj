@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExponentialPowCalculator.cs" />
+    <Compile Include="OneArgument\ExponentialPowCalculator.cs" />
     <Compile Include="OneArgument\PowTenCalculator.cs" />
     <Compile Include="OneArgument\PowTwoCalculator.cs" />
     <Compile Include="TwoArguments\DivIntCalculator.cs" />
