@@ -2,7 +2,13 @@
 
 namespace MyCalculator.OneArgument
 {
-   public static class OneArgumentFactory
+    /// <summary>
+    /// This factory for one operation functions
+    /// </summary>
+    /// <returns>
+    /// Returns completed calculation
+    /// </returns>>
+    public static class OneArgumentFactory
     {
         public static IOneArgumentCalculator CreateCalculator(string sender)
         {
@@ -29,13 +35,13 @@ namespace MyCalculator.OneArgument
                 case "Div":
                     return new DivCalculator();
                 case "Negative":
-                    return  new  NegativeCalculator();
+                    return new NegativeCalculator();
                 case "PowTwo":
-                    return  new  PowTwoCalculator();
+                    return new PowTwoCalculator();
                 case "PowTen":
-                    return  new PowTenCalculator();
+                    return new PowTenCalculator();
                 case "ExpPow":
-                    return  new ExponentialPowCalculator();
+                    return new ExponentialPowCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
 

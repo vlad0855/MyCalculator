@@ -4,6 +4,11 @@ namespace MyCalculator.OneArgument
 {
     public class ArcsinCalculator : IOneArgumentCalculator
     {
+        /// <summary>
+        /// Asin X
+        /// </summary>
+        /// <param name="firstValue"></param>
+        /// <returns></returns>
         public double Calculate(double firstValue)
         {
             if (firstValue < -1 || firstValue > 1)

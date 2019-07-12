@@ -4,6 +4,11 @@ namespace MyCalculator.OneArgument
 {
     public class ArccosCalculator : IOneArgumentCalculator
     {
+        /// <summary>
+        /// Acos X
+        /// </summary>
+        /// <param name="firstValue"></param>
+        /// <returns></returns>
         public double Calculate(double firstValue)
         {
             if (firstValue < -1 || firstValue > 1)

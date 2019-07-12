@@ -2,6 +2,12 @@
 
 namespace MyCalculator.TwoArguments
 {
+    /// <summary>
+    /// This is factory for two operation functions
+    /// </summary>
+    /// <returns>
+    /// Returns completed calculations
+    /// </returns>>
     public static class TwoArgumentsFactory
     {
         public static ITwoArgumentsCalculator CreateCalculator(string sender)
@@ -27,9 +33,9 @@ namespace MyCalculator.TwoArguments
                 case "Max":
                     return new MaxCalculator();
                 case "Mod":
-                    return  new ModCalculator();
+                    return new ModCalculator();
                 case "DivInt":
-                    return  new  DivIntCalculator();
+                    return new DivIntCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
 
